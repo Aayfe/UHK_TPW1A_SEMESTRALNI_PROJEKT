@@ -60,13 +60,13 @@
 }
 .description-left{
 
-    width: 60%;         
+    width: 50%;         
    
 }
 .description-right{
 
     justify-self: end;
-    width: 60%;           
+    width: 50%;           
    
 }
 header{
@@ -178,8 +178,10 @@ header{
     transition: all 0.3s ease-in-out;
 }
 .sctn-about-us{
+    position: relative;
     display: flex;
     justify-content: space-between;
+    z-index: 3;
 }
 .sctn-about-us-content{
   align-content: center;
@@ -225,7 +227,7 @@ header{
     background-color: var(--color-background-secondary);
     border-radius: 20px;
     width: 30%;
-    min-width: 300px;
+    min-width: 350px;
     max-width: 500px;
     height: 275px;
     color: var(--color-secondary-text);
@@ -253,7 +255,7 @@ header{
     border-radius: 50%;
 }
 .card-text{
-    padding: var(--space-20) 0;
+    padding: var(--space-10) 0;
 }
 .card-detail{
     display: flex;
@@ -273,7 +275,8 @@ header{
 }
 
 .sctn-booking form {
-    padding: var(--space-50) 0;
+ 
+    padding: var(--space-50) 0 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -285,6 +288,7 @@ header{
     display: flex;
     flex-direction: column;
     padding: var(--space-50);
+    padding-bottom: var(--space-0);
 }
 
 .input-container {
@@ -314,13 +318,20 @@ header{
 }
 
 .form-right-part input[type="submit"]{
+    padding: 0;
+    margin-top: var(--space-10);
+    background-color: var(--color-secondary);
+    color: var(--color-secondary-text);
+    text-transform: uppercase;
+    width: 125px;
+    align-self: end;
+
+    font-weight: var(--font-weight-bold);
+}
+
+.form-right-part input[type="submit"]:hover{
     background-color: var(--color-primary);
     color: var(--color-primary-text);
-    text-transform: uppercase;
-    width: 100px;
-    align-self: end;
-    padding: 0;
-    font-weight: var(--font-weight-bold);
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator,
@@ -355,4 +366,57 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 .opening-hours ul{
     display: block;
+}
+
+.between-section {
+    position: relative; 
+}
+
+.triangle-hero-about {
+    position: absolute;
+    bottom: -5px; 
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 500px solid transparent; 
+    border-bottom: 100px solid var(--color-background); 
+    z-index: 1; 
+}
+.triangle-about-menu {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-right: 500px solid transparent; 
+    border-bottom: 50px solid var(--color-background-secondary); 
+
+}
+.triangle-menu-review {
+    position: absolute;
+    top: -5px; 
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 500px solid transparent; 
+    border-top: 50px solid var(--color-background-secondary); 
+}
+.triangle-review-booking {
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 0;
+    height: 0;
+    border-right: 500px solid transparent; 
+    border-bottom: 50px solid var(--color-background-secondary); 
+}
+.triangle-booking-contact {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 500px solid transparent; 
+    border-bottom: 50px solid var(--color-background); 
+    
 }

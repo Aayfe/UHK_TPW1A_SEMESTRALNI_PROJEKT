@@ -10,11 +10,11 @@
 :root {
   --font-size-base: 16px;
   --font-size-base-large: 20px;
-  --font-size-description: 30px;
+  --font-size-description: 18px;
   --font-size-navigation: 16px;
 
   --font-size-h1: 30px;
-  --font-size-h2: 40px;
+  --font-size-h2: 25px;
   --font-size-h3: 30px;
   --font-size-hero: 30px;
   --font-size-hero-span: 40px;
@@ -41,12 +41,34 @@
     --color-secondary: #fff;
     --color-secondary-text: #1a1a1a;
 
-    --color-accent: #808080;
+    --color-accent: #bcbcbc;
 
     --color-background: #1a1a1a;
     --color-background-secondary: #fff;
 }
+.display-flex-def-lr-padding{
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-100) var(--space-120) var(--space-100);
+}
+.from-right-orientation{
+    flex-direction: row-reverse;
+    text-align: right;
+    align-items: flex-end;
+    color: var(--color-secondary-text);
+    background-color: var(--color-background-secondary);
+}
+.description-left{
 
+    width: 60%;         
+   
+}
+.description-right{
+
+    justify-self: end;
+    width: 60%;           
+   
+}
 header{
     display: flex;
     position: absolute;
@@ -148,8 +170,189 @@ header{
     cursor: pointer;
    
 }
+
+
 .hero-action-button:hover{
     background-color: var(--color-secondary);
     color: var(--color-secondary-text);
     transition: all 0.3s ease-in-out;
+}
+.sctn-about-us{
+    display: flex;
+    justify-content: space-between;
+}
+.sctn-about-us-content{
+  align-content: center;
+  width: 60%;
+  max-width: 1500px;
+}
+.sctn-about-us-content .description{
+    width: 80%;
+}
+.about-us-image{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.about-us-image img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+
+.sctn-menu-images{
+    padding: var(--space-50) 0;
+    display: flex;
+    justify-content: center;
+    gap: var(--space-50);
+   
+}
+.sctn-menu-images img{
+    width: 30%;
+    max-width: 800px;
+}
+
+.review-cards{
+    padding: var(--space-50) 0;
+    display: flex;
+    justify-content: center;    
+    flex-wrap: wrap;
+    gap: var(--space-50);
+}
+.card{
+    background-color: var(--color-background-secondary);
+    border-radius: 20px;
+    width: 30%;
+    min-width: 300px;
+    max-width: 500px;
+    height: 275px;
+    color: var(--color-secondary-text);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+.card-header{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.card-name{
+    font-size: var(--font-size-base-large);
+    font-weight: var(--font-weight-bold);
+}
+.card-avatar{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.card-text{
+    padding: var(--space-20) 0;
+}
+.card-detail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+.star{
+    font-size: var(--font-size-h1);
+    color: var(--color-accent);
+    text-shadow: var(--color-accent) 1px 2px;
+}
+.filled{
+    color: gold;
+    
+}
+
+.sctn-booking form {
+    padding: var(--space-50) 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    font-size: var(--font-size-base);
+    
+}
+.both-parts{
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-50);
+}
+
+.input-container {
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.sctn-booking form input,
+.sctn-booking form select {
+    border: var(--color-primary) 2px solid;
+    background-color: var(--color-accent);
+
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.form-left-part input, .form-left-part select{
+    width: 150px;
+}
+
+.form-right-part input{
+     width: 200px; 
+}
+
+.form-right-part input[type="submit"]{
+    background-color: var(--color-primary);
+    color: var(--color-primary-text);
+    text-transform: uppercase;
+    width: 100px;
+    align-self: end;
+    padding: 0;
+    font-weight: var(--font-weight-bold);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+
+}
+
+.contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    justify-content: space-between;
+    padding: var(--space-50) 0;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contact-content i{
+    color: var(--color-primary-text);
+    width: 10px;
+}
+.opening-hours{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 20px;
+    
+}
+.opening-hours ul{
+    display: block;
 }

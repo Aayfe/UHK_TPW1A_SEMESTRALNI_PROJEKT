@@ -122,7 +122,6 @@ header{
     flex-direction: column;
     justify-content: center;
     position: relative;
-    padding-left: var(--space-120);
 }
 .sctn-hero::before{
     content: "";
@@ -156,7 +155,7 @@ header{
     font-family: var(--font-family-alt);
     
 }
-.hero-action-button{
+.hero-action-button button{
     
     width: 250px;
     height: 60px;
@@ -172,7 +171,7 @@ header{
 }
 
 
-.hero-action-button:hover{
+.hero-action-button button:hover{
     background-color: var(--color-secondary);
     color: var(--color-secondary-text);
     transition: all 0.3s ease-in-out;
@@ -207,13 +206,19 @@ header{
 .sctn-menu-images{
     padding: var(--space-50) 0;
     display: flex;
-    justify-content: center;
-    gap: var(--space-50);
+    
+    justify-content: space-between;
+    
    
 }
 .sctn-menu-images img{
     width: 30%;
+
     max-width: 800px;
+    transition: all 0.3s ease-in-out;
+}
+.sctn-menu-images img:hover{
+    scale: 101%;
 }
 
 .review-cards{
@@ -334,11 +339,7 @@ header{
     color: var(--color-primary-text);
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator,
-input[type="time"]::-webkit-calendar-picker-indicator {
-    display: none;
 
-}
 
 .contact-content{
     display: flex;
@@ -419,4 +420,99 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     border-left: 500px solid transparent; 
     border-bottom: 50px solid var(--color-background); 
     
+}
+
+@media screen and (min-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 1250px) {
+    
+}
+@media screen and (max-width: 900px) {
+    header{
+        align-items: baseline;
+    }
+    .navigation-content{
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        gap: var(--space-10);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sctn-menu-images {
+        flex-direction: column;
+        gap: var(--space-20);
+        align-items: center;
+    }
+    .sctn-menu-images img{
+        max-width: 1250px;
+        width: 70%;
+    }
+    
+    .hero-text{
+        width: 100%;
+        font-size: calc(var(--font-size-hero) * 0.8);
+    }
+    .hero-text span{
+        font-size: calc(var(--font-size-hero-span)*0.8);
+    }
+    .hero-action-button button{
+        width: 200px;
+        height: 50px;
+        font-size: var(--font-size-base);
+    }
+    .left-triangle{
+border-left: 100vw solid transparent; 
+    }
+    .right-triangle{
+border-right: 100vw solid transparent; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header{
+        justify-content: center;
+    }
+    .display-flex-def-lr-padding{
+        padding: var(--space-100) var(--space-20) var(--space-100);
+    }
+    .sctn-about-us{
+        flex-direction: column;
+        gap: var(--space-50);
+        
+    }
+    .sctn-about-us-content .description{
+    width: 100%;
+}
+.about-us-image{
+    width: 100%;
+}
+    .card{
+        scale: 75%;
+    }
+    section h2, section .description{
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .both-parts{
+        padding: var(--space-10) 0;
+    }
+    .input-container{
+       
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-right-part input[type="submit"]{
+        
+    justify-content: center;
+    align-self: center ;
+    
+    }
 }

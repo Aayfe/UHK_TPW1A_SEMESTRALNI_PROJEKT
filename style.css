@@ -542,12 +542,7 @@ header{
     .main-heading{
         align-self: center;
     }
-    .navigation-content{
-        
-    }
     
-
-
     .review-cards{
         gap: 0;
         padding: var(--space-20) 0;

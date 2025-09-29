@@ -87,7 +87,9 @@ header{
   color: var(--color-primary-text);
   
 }
-
+.menu-toggle, .burger-icon, .burger-close{
+    display: none;
+}
 .navigation-content{
   display: flex;
   gap: var(--space-50);
@@ -185,12 +187,14 @@ header{
 .sctn-about-us-content{
   align-content: center;
   width: 60%;
+
   max-width: 1500px;
 }
 .sctn-about-us-content .description{
     width: 80%;
 }
 .about-us-image{
+    
     width: 40%;
     display: flex;
     justify-content: center;
@@ -422,13 +426,27 @@ header{
     
 }
 
-@media screen and (min-width: 1024px) {
-    
+@media screen and (max-width: 1100px) {
+    .sctn-about-us{
+        flex-direction: column;
+        gap: var(--space-50);
+        
+    }
+        .sctn-about-us-content, .sctn-about-us-content .description{
+        width: 100%;
+    }
+    .about-us-image{
+        width: 100%;
+    }
+    .about-us-image img {
+        min-width: 250px;
+        width: 40%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
 }
 
-@media screen and (max-width: 1250px) {
-    
-}
+
 @media screen and (max-width: 900px) {
     header{
         align-items: baseline;
@@ -465,32 +483,77 @@ header{
         font-size: var(--font-size-base);
     }
     .left-triangle{
-border-left: 100vw solid transparent; 
+    border-left: 100vw solid transparent; 
     }
     .right-triangle{
-border-right: 100vw solid transparent; 
+    border-right: 100vw solid transparent; 
     }
 }
+@media screen and (max-width: 550px) {
 
-@media screen and (max-width: 480px) {
+    .menu-toggle, .burger-icon, .burger-close{
+        position: absolute;
+        right: var(--space-20);
+        top: 25px;
+    }
+    .burger-icon, .burger-close{
+        display: flex;
+    }
+    .burger-icon>i{
+        font-size: 28px;
+    }
     header{
         justify-content: center;
+        flex-direction: column;
     }
+    .navigation-content {
+        display: none;
+        position: absolute; 
+        align-items: center; 
+        top: 0; 
+        left: 0; 
+        right: 0; 
+        width: 100%; 
+        padding: var(--space-20); 
+        background-color: 
+        var(--color-background);
+        gap: var(--space-20);
+       
+    }
+
+    .menu-toggle:checked ~ .burger-icon + .burger-close + .navigation-content {
+        display: flex;
+    }
+    .menu-toggle:checked ~ .burger-close {
+        display: flex;
+        z-index: 1;
+    }
+
+    .menu-toggle:not(:checked) ~ .burger-close {
+        display: none;
+    } 
+}
+@media screen and (max-width: 480px) {
+    
     .display-flex-def-lr-padding{
         padding: var(--space-100) var(--space-20) var(--space-100);
     }
-    .sctn-about-us{
-        flex-direction: column;
-        gap: var(--space-50);
+    
+    .main-heading{
+        align-self: center;
+    }
+    .navigation-content{
         
     }
-    .sctn-about-us-content .description{
-    width: 100%;
-}
-.about-us-image{
-    width: 100%;
-}
+    
+
+
+    .review-cards{
+        gap: 0;
+        padding: var(--space-20) 0;
+    }
     .card{
+
         scale: 75%;
     }
     section h2, section .description{

@@ -112,6 +112,7 @@ header{
 }
 
 .sctn-hero{
+    min-height: 600px;
     height: 100vh;
     width: 100%;
     background-color: black;
@@ -543,6 +544,7 @@ footer{
     .main-heading{
         align-self: center;
     }
+
 
     .review-cards{
         gap: 0;

@@ -6,6 +6,10 @@
     <title>Smooth Blend - Café & Coffee Delights</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Library na zoom obrázku-->
+    <script src="https://cdn.jsdelivr.net/npm/smooth-zoom/dist/zoom.browser.js"></script>
+
 </head>
 <header>
     <h1 class="main-heading">Smooth&nbspBlend</h1>
@@ -19,7 +23,6 @@
             <li><a href="#sctn-contact">Contact</a></li>
             <li><a href="#sctn-about-us">About us</a></li>
             <li><a href="#sctn-booking">Book a table</a></li>
-            <li><a href=""><img class="language-changer-icon" src="https://cdn.pixabay.com/photo/2013/07/13/14/15/czech-republic-162276_1280.png" alt=""></a></li>
         </ul>
     </nav>
 </header>
@@ -43,7 +46,7 @@
                 <p class="sctn-text description">Welcome to Smooth Blend, where every cup tells a story. Our journey began with a simple passion for exceptional coffee and a commitment to creating a warm, welcoming space for everyone. Whether you're grabbing a quick espresso or settling in with a latte, we believe in crafting each drink with care and creativity. Every sip you take reflects our dedication to quality, sustainability, and the community around us. Come join us in experiencing the art of coffee.</p>
         </div>
         <div class="about-us-image">
-            <img src="https://cdn.pixabay.com/photo/2018/10/23/01/40/coffee-3766810_1280.jpg" alt="">
+            <img src="https://cdn.pixabay.com/photo/2018/10/23/01/40/coffee-3766810_1280.jpg" alt="A hot cup of coffee with latte art on a wooden table">
         </div>
         
     </section>
@@ -60,10 +63,18 @@
             </div>
             
             <div class="sctn-menu-images">
-                <img class="menu-image" src="menu1.png" alt="">
-                <img class="menu-image" src="menu2.png" alt="">
-                <img class="menu-image" src="menu3.png" alt="">
+                <img class="menu-image zoomable" src="menu1.png" alt="Handwritten menu with drinks including coffee, tea, and other beverages.">
+                <img class="menu-image zoomable" src="menu2.png" alt="Menu with snacks such as croissants, muffins, and sandwiches.">
+                <img class="menu-image zoomable" src="menu3.png" alt="Menu with snacks such as croissants, muffins, and sandwiches.">
             </div>
+            <!-- Script pro library na zoom obrázku-->
+            <script>
+                Zoom('.zoomable', {
+                    background: 'auto', 
+                    useMaximumSize: true 
+                });
+            </script>
+
         </div>
     </section>
     <div class="between-section">
@@ -77,7 +88,7 @@
             <div class="review-cards">
                 <div class="card">
                     <div class="card-header">
-                        <img class="card-avatar"  src="https://randomuser.me/api/portraits/women/17.jpg" alt="">
+                        <img class="card-avatar"  src="https://randomuser.me/api/portraits/women/17.jpg" alt="Avatar of a reviewer, a person with a neutral expression.">
                         <p class="card-name">Alice</p>
                     </div>
                     <p class="card-text">A cozy spot with great coffee and friendly service. Perfect for a relaxing afternoon. Highly recommend the cappuccino!</p>
@@ -94,7 +105,7 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <img class="card-avatar"  src="https://randomuser.me/api/portraits/men/70.jpg" alt="">
+                        <img class="card-avatar"  src="https://randomuser.me/api/portraits/men/70.jpg" alt="Avatar of a reviewer, a person with a neutral expression.">
                         <p class="card-name">John</p>
                     </div>
                     <p class="card-text">Fantastic atmosphere and delicious pastries. The staff was welcoming, and the coffee was brewed to perfection. I'll be back for sure!</p>
@@ -111,7 +122,7 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <img class="card-avatar"  src="https://randomuser.me/api/portraits/women/56.jpg" alt="">
+                        <img class="card-avatar"  src="https://randomuser.me/api/portraits/women/56.jpg" alt="Avatar of a reviewer, a person with a neutral expression.">
                         <p class="card-name">Emma</p>
                     </div>
                     <p class="card-text">Love this cafe! The vibe is warm, and the espresso is strong and smooth. A hidden gem in the neighborhood.</p>
@@ -201,15 +212,15 @@ a table to ensure you have a spot!</p>
             <div class="contacts">
                 <div class="contact">
                     <i class="fa-regular fa-envelope"></i>
-                    <a href="">info@smoothblendcafe.com</a>
+                    <a href="mailto:info@smoothblencafe.com">info@smoothblendcafe.com</a>
                 </div>
                 <div class="contact">
                     <i class="fa-solid fa-mobile-screen-button"></i>
-                    <a href="">777 777 777</a>
+                    <a href="tel:+420777777777">777 777 777</a>
                 </div>
                 <div class="contact">
                     <i class="fa-brands fa-instagram"></i>
-                    <a href="">@smoothblendcafe</a>
+                    <a href="https://instagram.com" target="_blank">@smoothblendcafe</a>
                 </div>
             </div>
             <div class="opening-hours">
@@ -226,7 +237,7 @@ a table to ensure you have a spot!</p>
     
 </body>
 <footer>
-        <p>&copy; 2025 Jakub&nbsp;Didkovský</p>  
+        <p>&copy; 2025 Jakub&nbsp;Didkovský - Studentský projekt</p>  
 </footer>
 
 </html>

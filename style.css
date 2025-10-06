@@ -103,6 +103,10 @@ header{
   color: var(--color-primary-text);
 
 }
+.navigation-content li:hover{
+    
+    scale: 105%;
+}
 .language-changer-icon{
   width: 30px;
   height: 30px;
@@ -232,6 +236,7 @@ header{
     flex-wrap: wrap;
     gap: var(--space-50);
 }
+
 .card{
     background-color: var(--color-background-secondary);
     border-radius: 20px;
@@ -246,7 +251,10 @@ header{
     flex-direction: column;
     
 }
-
+.card:hover{
+    transition: ease-in-out 0.3s;
+    scale: 102%;
+}
 .card-header{
     display:flex;
     flex-direction: row;
@@ -339,6 +347,7 @@ header{
 }
 
 .form-right-part input[type="submit"]:hover{
+    transition: ease-in-out 0.2s;
     background-color: var(--color-primary);
     color: var(--color-primary-text);
 }
@@ -430,7 +439,6 @@ footer{
     font-size: 14px;
     text-align: center;
 }
-
 @media screen and (max-width: 1100px) {
     .sctn-about-us{
         flex-direction: column;
@@ -452,29 +460,10 @@ footer{
 }
 
 
-@media screen and (max-width: 900px) {
-    header{
-        align-items: baseline;
-    }
+@media screen and (max-width: 930px) {
     .navigation-content{
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: flex-start;
-        gap: var(--space-10);
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .sctn-menu-images {
-        flex-direction: column;
         gap: var(--space-20);
-        align-items: center;
     }
-    .sctn-menu-images img{
-        max-width: 1250px;
-        width: 70%;
-    }
-    
     .hero-text{
         width: 100%;
         font-size: calc(var(--font-size-hero) * 0.8);
@@ -487,6 +476,30 @@ footer{
         height: 50px;
         font-size: var(--font-size-base);
     }
+}
+
+@media screen and (max-width: 767px) {
+    
+    header{
+        align-items: baseline;
+    }
+    .navigation-content{
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        gap: var(--space-10);
+    }
+    .sctn-menu-images {
+        flex-direction: column;
+        gap: var(--space-20);
+        align-items: center;
+    }
+    .sctn-menu-images img{
+        max-width: 1250px;
+        width: 70%;
+    }
+    
+    
     .left-triangle{
     border-left: 100vw solid transparent; 
     }
@@ -520,8 +533,7 @@ footer{
         right: 0; 
         width: 100%; 
         padding: var(--space-20); 
-        background-color: 
-        var(--color-background);
+        background-color: var(--color-background);
         gap: var(--space-20);
        
     }

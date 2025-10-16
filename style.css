@@ -1,11 +1,14 @@
-@import "reset.css" layer(reset);
-@import "base.css" layer(base);
-@import "utilities.css" layer(utilities);
+@import "reset.css";
+@import "base.css";
+@import "utilities.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
 
+
 @layer reset, base, utilities;
+
+
 
 :root {
 

@@ -222,6 +222,7 @@ a table to ensure you have a spot!</p>
                     <a href="https://instagram.com" target="_blank">@smoothblendcafe</a>
                 </div>
             </div>
+            
             <div class="opening-hours">
                 <h3>Opening Hours</h3>
                 <ul class="opening-hours-list">
@@ -231,10 +232,35 @@ a table to ensure you have a spot!</p>
                 </ul>
             </div>
         </div>
-        
+        <div class="map">
+                <iframe  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=Go%C4%8D%C3%A1rova%20t%C5%99%C3%ADda%20+()&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
+            </div>
     </section>
     
 </body>
+<script>
+
+    //jen takový návrh?????????
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    
+  
+    const colorBackground = getComputedStyle(document.documentElement).getPropertyValue('--color-background').trim();
+
+    if (window.scrollY > 0) {
+        header.style.backgroundColor = 'rgba(26, 26, 26, 0.8)';  
+        header.style.backdropFilter = 'blur(10px)';  
+        header.style.height = '60px';
+    } else {
+        header.style.backgroundColor = 'transparent';
+        header.style.backdropFilter = 'none';  
+        header.style.height = 'auto';
+                
+    }
+});
+
+
+</script>
 <footer>
         <p>&copy; 2025 Jakub&nbsp;Didkovský - Studentský projekt</p>  
 </footer>

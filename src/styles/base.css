@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+
+
+@layer base{
+
+
+    :root {
+
+  --text-size-80: 0.694rem;
+  --text-size-90: 0.833rem;
+  --text-size-100: 1rem;
+  --text-size-200: 1.2rem;
+  --text-size-300: 1.44rem;
+  --text-size-400: 1.728rem;
+  --text-size-500: 2.074rem;
+  --text-size-600: 2.488rem;
+  --text-size-700: 2.986rem;
+
+  --font-size-base: var(--text-size-100) ;
+  --font-size-base-large: var(--text-size-200);
+  --font-size-description: var(--text-size-200);
+  --font-size-navigation: var(--text-size-200);
+
+  --font-size-h1: var(--text-size-500);
+  --font-size-h2: var(--text-size-400);
+  --font-size-h3: var(--text-size-200);
+  --font-size-hero: var(--text-size-400);
+  --font-size-hero-span: var(--text-size-600);
+
+  --font-size-card-text: var(--text-size-100);  
+  --font-size-contact-text: var(--text-size-100);
+  
+  --font-family-sans: 'Noto Sans', sans-serif;
+  --font-family-alt: 'Seaweed Script', cursive;
+
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  --space-0: 0;
+  --space-10: 10px;
+  --space-20: 20px;
+  --space-50: 50px;
+  --space-100: 100px;
+  --space-120: 120px;
+
+    --color-primary: #1a1a1a;
+    --color-primary-text:#fff;
+
+    --color-secondary: #fff;
+    --color-secondary-text: #1a1a1a;
+
+    --color-accent: #bcbcbc;
+
+    --color-background: #1a1a1a;
+    --color-background-secondary: #fff;
+
+    --grid-unit: 0.5rem;  
+}
+
+
+    html{
+        background-color: var(--color-background);
+    }
+    body{
+       
+        font-family: var(--font-family-sans);
+        font-size: var(--font-size-base);
+        color: var(--color-primary-text);
+        line-height: 1.5;
+    }
+    h2{
+        font-size: var(--font-size-h2);
+        font-weight: var(--font-weight-bold);
+        padding-bottom: var(--space-10);
+    }
+    
+    .description{
+        font-size: var(--font-size-description);
+    }
+    a{
+        text-decoration: none;
+        color:inherit;
+    }
+    ul{
+        list-style: none;
+    }
+}

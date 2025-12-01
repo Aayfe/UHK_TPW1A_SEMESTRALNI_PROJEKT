@@ -1,0 +1,104 @@
+.hero-display-flex{
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    padding: var(--space-100) var(--space-120) var(--space-100);
+}
+.display-flex-def-lr-padding{
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-100) var(--space-120) var(--space-100);
+}
+.from-right-orientation{
+    flex-direction: row-reverse;
+    text-align: right;
+    align-items: flex-end;
+    color: var(--color-secondary-text);
+    background-color: var(--color-background-secondary);
+}
+.description-left{
+
+    width: 50%;         
+   
+}
+.description-right{
+
+    justify-self: end;
+    width: 50%;           
+   
+}
+.navigation-content li:hover{
+    
+    scale: 105%;
+}
+.hero-action-button button:hover{
+    background-color: var(--color-secondary);
+    color: var(--color-secondary-text);
+    transition: all 0.3s ease-in-out;
+}
+.sctn-about-us-content .description{
+    width: 80%;
+}
+.card:hover{
+    transition: ease-in-out 0.3s;
+    scale: 102%;
+}
+
+.form-right-part input[type="submit"]:hover{
+    transition: ease-in-out 0.2s;
+    background-color: var(--color-primary);
+    color: var(--color-primary-text);
+}
+
+.between-section {
+    position: relative; 
+}
+
+.triangle-hero-about {
+    position: absolute;
+    bottom: -5px; 
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: calc(var(--grid-unit)*62.5) solid transparent; 
+    border-bottom: calc(var(--grid-unit)*12.5) solid var(--color-background); 
+    z-index: 1; 
+}
+.triangle-about-menu {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-right: calc(var(--grid-unit)*62.5) solid transparent; 
+    border-bottom: calc(var(--grid-unit)*12.5) solid var(--color-background-secondary); 
+
+}
+.triangle-menu-review {
+    position: absolute;
+    top: -5px; 
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: calc(var(--grid-unit)*62.5) solid transparent; 
+    border-top: calc(var(--grid-unit)*12.5) solid var(--color-background-secondary); 
+}
+.triangle-review-booking {
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 0;
+    height: 0;
+    border-right: calc(var(--grid-unit)*62.5) solid transparent; 
+    border-bottom: calc(var(--grid-unit)*12.5) solid var(--color-background-secondary); 
+}
+.triangle-booking-contact {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: calc(var(--grid-unit)*62.5) solid transparent; 
+    border-bottom: calc(var(--grid-unit)*12.5) solid var(--color-background); 
+    
+}

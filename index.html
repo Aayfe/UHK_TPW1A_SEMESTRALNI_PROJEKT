@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smooth Blend - Café & Coffee Delights</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/styles/style.css">
     
     <!-- Library na zoom obrázku-->
     <script src="https://cdn.jsdelivr.net/npm/smooth-zoom/dist/zoom.browser.js"></script>
@@ -27,8 +27,34 @@
     </nav>
 </header>
 <body>
+    <div id="popup">
+        <div class="popup-content">
+            <span class="close-button" id="close-popup">&times;</span>
+            <h2>Tato stránka je studentský projekt</h2>
+            <p>Všechny informace, které se nacházejí na této stránce jsou smyšlené!</p>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var popup = document.getElementById('popup');
+            var closeButton = document.getElementById('close-popup');
+
+           
+            closeButton.addEventListener('click', function() {
+                popup.style.display = 'none';
+            });
+
+            window.addEventListener('click', function(event) {
+                if (event.target == popup) {
+                    popup.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
     <section class="sctn-hero">
-        <div class="hero-content display-flex-def-lr-padding">
+        <div class="hero-content hero-display-flex">
             <p class="hero-text">
                 Start your day with the perfect cup, crafted for comfort, conversation, and calm moments only in <span>Smooth&nbsp;Blend!</span>
             </p>
@@ -62,9 +88,9 @@
             </div>
             
             <div class="sctn-menu-images">
-                <img class="menu-image zoomable" src="menu1.png" alt="Handwritten menu with drinks including coffee, tea, and other beverages.">
-                <img class="menu-image zoomable" src="menu2.png" alt="Menu with snacks such as croissants, muffins, and sandwiches.">
-                <img class="menu-image zoomable" src="menu3.png" alt="Menu with snacks such as croissants, muffins, and sandwiches.">
+                <img class="menu-image zoomable" src="src/img/menu1.png" alt="Handwritten menu with drinks including coffee, tea, and other beverages.">
+                <img class="menu-image zoomable" src="src/img/menu2.png" alt="Menu with snacks such as croissants, muffins, and sandwiches.">
+                <img class="menu-image zoomable" src="src/img/menu3.png" alt="Menu with snacks such as croissants, muffins, and sandwiches.">
             </div>
             <!-- Script pro library na zoom obrázku-->
             <script>
@@ -243,18 +269,21 @@ a table to ensure you have a spot!</p>
     //jen takový návrh?????????
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
+    const navIcon = document.querySelector('.burger-icon');
     
   
     const colorBackground = getComputedStyle(document.documentElement).getPropertyValue('--color-background').trim();
 
     if (window.scrollY > 0) {
-        header.style.backgroundColor = 'rgba(26, 26, 26, 0.8)';  
+        header.style.backgroundColor = 'rgba(26, 26, 26, 0.7)';  
         header.style.backdropFilter = 'blur(10px)';  
         header.style.height = '60px';
+        navIcon.classList.add('burger-icon-fixed');
     } else {
         header.style.backgroundColor = 'transparent';
         header.style.backdropFilter = 'none';  
         header.style.height = 'auto';
+        navIcon.classList.remove('burger-icon-fixed');
                 
     }
 });

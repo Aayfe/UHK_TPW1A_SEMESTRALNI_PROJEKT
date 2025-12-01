@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
 
-@layer reset, base, components, utilities, components-responsive;
 
 @import './reset.css' layer(reset);
 @import './base.css' layer(base);
@@ -10,4 +9,4 @@
 @import './components-responsive.css' layer(components-responsive);
 
 
-
+@layer reset, base, components, utilities, components-responsive;

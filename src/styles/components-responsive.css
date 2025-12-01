@@ -123,7 +123,7 @@
         }
 
         .stcn-hero{
-             background-image: url('../src/img/heroMedium.jpg');
+             background-image: url('../img/heroMedium.jpg');
         }
         .sctn-menu-images {
             flex-direction: column;

@@ -122,7 +122,9 @@
             width: 100%;
         }
 
-
+        .stcn-hero{
+             background-image: url(/src/img/heroMedium.jpg);
+        }
         .sctn-menu-images {
             flex-direction: column;
             gap: var(--space-20);

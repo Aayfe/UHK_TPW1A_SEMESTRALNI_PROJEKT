@@ -92,10 +92,9 @@ header {
 }
 
 .hero-action-button {
-
-    width: calc(var(--grid-unit)*31.5);
-    height: calc(var(--grid-unit)*7.5);
    
+    padding: calc(var(--grid-unit)*2) calc(var(--grid-unit)*6);
+    font-size: var(--font-size-base-large);
     color: var(--color-primary-text);
     text-transform: uppercase;
     background-color: transparent;
@@ -104,9 +103,7 @@ header {
     cursor: pointer;
 
 }
-.hero-action-button a{
-     font-size: var(--font-size-base-large);
-}
+
 
 
 .sctn-about-us {

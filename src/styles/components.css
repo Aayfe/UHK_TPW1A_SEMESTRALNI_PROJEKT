@@ -91,11 +91,11 @@ header {
 
 }
 
-.hero-action-button button {
+.hero-action-button {
 
     width: calc(var(--grid-unit)*31.5);
     height: calc(var(--grid-unit)*7.5);
-    font-size: var(--font-size-base-large);
+   
     color: var(--color-primary-text);
     text-transform: uppercase;
     background-color: transparent;
@@ -103,6 +103,9 @@ header {
     border-radius: 20px;
     cursor: pointer;
 
+}
+.hero-action-button a{
+     font-size: var(--font-size-base-large);
 }
 
 

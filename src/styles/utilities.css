@@ -31,7 +31,7 @@
     
     scale: 105%;
 }
-.hero-action-button button:hover{
+.hero-action-button:hover{
     background-color: var(--color-secondary);
     color: var(--color-secondary-text);
     transition: all 0.3s ease-in-out;

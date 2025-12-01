@@ -213,13 +213,9 @@
     .star {
         font-size: var(--font-size-h1);
         color: var(--color-accent);
-        text-shadow: var(--color-primary) 1px 2px;
     }
 
-    .filled {
-        color: gold;
-
-    }
+    
 
 
 

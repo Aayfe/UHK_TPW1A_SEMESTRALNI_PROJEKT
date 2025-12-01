@@ -77,6 +77,10 @@
         position: relative;
     }
 
+    .filled {
+        color: var(--color-primary);
+
+    }
     .triangle-hero-about {
         position: absolute;
         bottom: -5px;

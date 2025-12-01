@@ -3,7 +3,6 @@
 @import './components.css' layer(components);
 @import './utilities.css' layer(utilities);
 @import './components-responsive.css' layer(components-responsive);
-@import './utilities-responsive.css' layer(utilities-responsive);
 
 
-@layer reset, base, components, utilities, components-responsive, utilities-responsive;
+@layer reset, base, components, utilities, components-responsive;

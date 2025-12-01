@@ -9,4 +9,3 @@
 @import './components-responsive.css' layer(components-responsive);
 
 
-@layer reset, base, components, utilities, components-responsive;

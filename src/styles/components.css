@@ -36,8 +36,6 @@ header {
 
 .navigation-content li a {
     font-size: var(--font-size-navigation);
-    font-weight: var(--font-weight-bold);
-    text-transform: uppercase;
 
     color: var(--color-primary-text);
 }
@@ -98,7 +96,6 @@ header {
     width: calc(var(--grid-unit)*31.5);
     height: calc(var(--grid-unit)*7.5);
     font-size: var(--font-size-base-large);
-    font-weight: var(--font-weight-bold);
     color: var(--color-primary-text);
     text-transform: uppercase;
     background-color: transparent;
@@ -188,7 +185,7 @@ header {
 
 .card-name {
     font-size: var(--font-size-base-large);
-    font-weight: var(--font-weight-bold);
+
 }
 
 .card-avatar {
@@ -279,7 +276,7 @@ header {
     width: calc(var(--grid-unit)*16);
     align-self: end;
 
-    font-weight: var(--font-weight-bold);
+
 }
 
 

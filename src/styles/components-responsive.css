@@ -112,14 +112,13 @@
         display: none;
     }
 
-    section h2,
+    section h2:not(.hero-text),
     section .description {
         display: flex;
         text-align: center;
         justify-content: center;
         width: 100%;
     }
-
 
 
     .sctn-menu-images {

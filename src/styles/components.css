@@ -76,6 +76,7 @@ header {
 }
 
 .hero-text {
+    
     font-size: var(--font-size-hero);
     color: var(--color-primary-text);
     font-family: var(--font-family-sans);

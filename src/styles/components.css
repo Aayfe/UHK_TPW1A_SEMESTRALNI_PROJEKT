@@ -343,7 +343,10 @@ footer p {
 }
 
 
-iframe {
+#gmap_canvas {
     width: 100%;
     height: calc(50*var(--grid-unit));
+    border: none;
+    overflow: hidden;
+    margin: 0;
 }

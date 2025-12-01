@@ -1,24 +1,14 @@
-document.addEventListener('DOMContentLoaded', function() {
-            var popup = document.getElementById('popup');
-            var closeButton = document.getElementById('close-popup');
+document.addEventListener('DOMContentLoaded', function () {
 
-           
-            closeButton.addEventListener('click', function() {
-                popup.style.display = 'none';
-            });
+    alert("!TATO STRÁNKA SLOUŽÍ POUZE JAKO STUDENTSKÝ PROJEKT! VŠECHNY INFORMACE JSOU SMYŠLENÉ");
 
-            window.addEventListener('click', function(event) {
-                if (event.target == popup) {
-                    popup.style.display = 'none';
-                }
-            });
+    
+    Zoom('.zoomable', {
+        background: 'auto',
+        useMaximumSize: true
+    });
 
-            Zoom('.zoomable', {
-                    background: 'auto', 
-                    useMaximumSize: true 
-                });
-
-             window.addEventListener('scroll', function () {
+    window.addEventListener('scroll', function () {
         const header = document.querySelector('header');
         const navIcon = document.querySelector('.burger-icon');
 
@@ -38,4 +28,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
         }
     });
-        });
+});

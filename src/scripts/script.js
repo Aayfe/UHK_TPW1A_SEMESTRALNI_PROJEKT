@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const colorBackground = getComputedStyle(document.documentElement).getPropertyValue('--color-background').trim();
 
         if (window.scrollY > 0) {
-            header.style.backgroundColor = 'rgba(26, 26, 26, 0.7)';
+            header.style.backgroundColor = 'rgba(26, 26, 26, 0.85)';
             header.style.backdropFilter = 'blur(10px)';
             header.style.height = '60px';
             navIcon.classList.add('burger-icon-fixed');

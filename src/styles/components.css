@@ -215,9 +215,6 @@
         color: var(--color-accent);
     }
 
-    
-
-
 
     .sctn-booking form {
 
@@ -277,7 +274,6 @@
 
     }
 
-
     .contact-content {
 
         display: flex;
@@ -322,8 +318,6 @@
     }
 
 
-
-    /*FOOTER*/
     footer {
         color: var(--color-accent);
         font-size: var(--font-size-base);
@@ -344,5 +338,58 @@
         border: none;
         overflow: hidden;
         margin: 0;
+    }
+
+    .triangle-hero-about {
+        position: absolute;
+        bottom: -5px;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-left: calc(var(--grid-unit)*62.5) solid transparent;
+        border-bottom: calc(var(--grid-unit)*12.5) solid var(--color-background);
+        z-index: 1;
+    }
+
+    .triangle-about-menu {
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-right: calc(var(--grid-unit)*62.5) solid transparent;
+        border-bottom: calc(var(--grid-unit)*12.5) solid var(--color-background-secondary);
+
+    }
+
+    .triangle-menu-review {
+        position: absolute;
+        top: -5px;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-left: calc(var(--grid-unit)*62.5) solid transparent;
+        border-top: calc(var(--grid-unit)*12.5) solid var(--color-background-secondary);
+    }
+
+    .triangle-review-booking {
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-right: calc(var(--grid-unit)*62.5) solid transparent;
+        border-bottom: calc(var(--grid-unit)*12.5) solid var(--color-background-secondary);
+    }
+
+    .triangle-booking-contact {
+        position: absolute;
+        bottom: -5px;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-left: calc(var(--grid-unit)*62.5) solid transparent;
+        border-bottom: calc(var(--grid-unit)*12.5) solid var(--color-background);
+
     }
 }
